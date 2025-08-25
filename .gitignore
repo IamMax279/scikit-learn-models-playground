@@ -1,3 +1,2 @@
-drive/
-sample_data/
-.config/
+venv/
+__pycache__/
