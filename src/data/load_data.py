@@ -1,9 +1,12 @@
 import pandas as pd
+from sklearn.datasets._california_housing import fetch_california_housing
 
 def load_housing_data():
-    df = pd.read_csv('data/housing.csv')
+    bunch = fetch_california_housing()
 
-    df['population_per_house'] = df['population'] / df['households']
-    df['rooms_per_house'] = df['total_rooms'] / df['households']
+    # kolejno: wartości cech, nazwy kolumn (cech)
+    df = pd.DataFrame(bunch['data'], columns=bunch['feature_names'])
+
+    df['Housing_price'] = bunch['target']
 
     return df
