@@ -7,7 +7,7 @@ import pandas as pd
 from src.data.load_data import load_housing_data
 from src.features.feature_extraction import get_housing_features
 
-def train_model():
+def train_RFR():
     X = get_housing_features()
     y = load_housing_data()['Housing_price']
 
@@ -46,4 +46,4 @@ def train_model():
     plt.ylabel('Frequency')
     plt.show()
 
-train_model()
+train_RFR()
