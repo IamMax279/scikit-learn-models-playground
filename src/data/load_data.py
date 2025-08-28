@@ -10,3 +10,8 @@ def load_housing_data():
     df['Housing_price'] = bunch['target']
 
     return df
+
+def load_diabetes_data():
+    df = pd.read_csv('data/diabetes.csv')
+
+    return df
