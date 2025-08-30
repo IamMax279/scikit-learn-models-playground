@@ -29,7 +29,6 @@ def train_logistic_regression():
     # set color map shades for color blue
     disp.plot(cmap='Blues')
     plt.title('Confusion matrix')
-    plt.show()
 
     plt.figure(figsize=(10, 6))
 
